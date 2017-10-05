@@ -12,4 +12,17 @@ fun main(args: Array<String>) {
 
     // type inferrence
     val inferredName = "Kotlin"
+
+    // initialized with condition
+    val version = "1.1.4"
+    val iName2: String
+    if(version == "1.1.4") {
+        iName2 = "Kotlin v1.1.4"
+    } else {
+        iName2 = "Kotlin other version"
+    }
+
+    // warning: reference is immutable but object can be mutable
+    val versions = arrayListOf("1.1.2", "1.1.3")
+    versions.add("1.1.4")
 }
